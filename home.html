@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza 365</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Toastr -->
+  <link rel="stylesheet" href="plugins/toastr/toastr.min.css"> 
+  <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="colorful loading icon_5326551.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-info elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Pizza 365</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/Nguyen Bao Khanh - FS122367.JPG" style="height: 35px" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nguyễn Bảo Khánh</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                DANH MỤC QUẢN LÝ
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview font-weight-bold">
+              <li class="nav-item">
+                <a href="./home.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ĐƠN HÀNG PIZZA</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>NHÂN VIÊN</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>KHÁCH HÀNG</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 font-weight-bold text-info">QUẢN LÝ ĐƠN HÀNG PIZZA</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Đơn hàng</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="jumbotron py-4">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-5">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="pizzaType">Loại Pizza</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <select name="selectPizza" id="select-pizza" class="form-control select2">
+                                    <option value="0">--Chọn loại pizza---</option>
+                                    <option value="Seafood">Pizza hải sản</option>
+                                    <option value="Hawaii">Pizza Hawaii</option>
+                                    <option value="Bacon">Pizza thịt hun khói</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="status">Trạng thái</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <select name="selectStatus" id="select-status" class="form-control select2">
+                                    <option value="0">---Chọn trạng thái---</option>
+                                    <option value="open">Open</option>
+                                    <option value="cancel">Cancel</option>
+                                    <option value="confirmed">Confirmed</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button id="btn-filter" class="btn btn-success font-weight-bold">Lọc dữ liệu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ml-n4">
+            <button id="btn-create" class="btn btn-info mb-2 font-weight-bold">+ THÊM MỚI</button>
+            <table id="table-order" class="table table-bordered table-hover table-striped">
+                <thead class="table-info">
+                    <tr>
+                        <th>STT</th>
+                        <th>Order ID</th>
+                        <th>Kích cỡ</th>
+                        <th>Đường kính</th>
+                        <th>Loại Pizza</th>
+                        <th>Loại nước uống</th>
+                        <th>Mã voucher</th>
+                        <th>Giảm giá</th>
+                        <th>Đơn giá</th>
+                        <th>Phải thanh toán</th>
+                        <th>Trạng thái</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <!--    MODAL CREATE ORDER   -->
+        <div>
+            <div id="modal-form-create" class="fade modal" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info">
+                            <h3 class="text-white font-weight-bold">TẠO ĐƠN HÀNG MỚI</h3>
+                        </div>
+                        <div class="modal-body">
+                            <h5 class="text-secondary font-italic mb-3">Thông tin khách hàng:</h5>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="hoTen">Họ và tên</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="" id="inp-fullname" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="email">Email</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="email" id="inp-email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="phone">Phone</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="phone" id="inp-phone" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="hoTen">Địa chỉ</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="" id="inp-address" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="email">Lời nhắn</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="email" id="inp-message" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <h5 class="text-secondary font-italic my-3">Thông tin đơn hàng:</h5>
+                            <div class="row mt-2">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="hoTen">Kích cỡ</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select name="pizza size" id="select-size" class="form-control">
+                                                <option value="0">--Chọn kích cỡ--</option>
+                                                <option value="S">Size S</option>
+                                                <option value="M">Size M</option>
+                                                <option value="L">Size L</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="email">Đường kính</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="" name="email" id="inp-duongkinh" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">   
+                                        <div class="col-sm-4">
+                                            <label for="phone">Sườn</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="phone" id="inp-suonNuong" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="hoTen">Salad(Gram)</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="" id="inp-salad" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="email">Số lượng nước</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="email" id="inp-count-drink" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="phone">Đơn giá</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="phone" id="inp-price" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="hoTen">Loại pizza</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select name="pizzaType" id="selece-pizza-type" class="form-control">
+                                              <option value="0">--Chọn loại pizza--</option>
+                                                <option value="Seafood">Pizza hải sản</option>
+                                                <option value="Hawaii">Pizza Hawaii</option>
+                                                <option value="Bacon">Pizza thịt hun khói</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="email">Loại nước uống</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select name="" id="select-drink" class="form-control">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="status">Trạng thái</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select name="pizzaType" id="inp-status" class="form-control">
+                                                <option value="open">Open</option>
+                                                <option value="cancel">Cancel</option>
+                                                <option value="confirmed">Confirmed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label for="voucher">Mã Voucher</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="pizzaType" id="inp-voucher" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button id="btn-confirm-create" class="btn btn-info toastrDefaultError">Tạo đơn</button>
+                            <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--      MODAL  CONFIRM DATA SUCCESS     -->
+        <div>
+          <div id="modal-confirm-success" class="fade modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body p-5">
+                  <h3 class="text-center text-info">Xác nhận thông tin đơn hàng</h3>
+                  <div class="row">
+                    <label for="info">Thông tin đơn hàng:  </label>
+                    <textarea name="thông tin đơn hàng" id="inp-info-order" cols="40" rows="7" class="form-control" disabled>
+                    </textarea>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4">
+                      <label for="price">Mã Voucher</label>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" name="" id="inp-voucher-modal" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-4">
+                      <label for="price">Đơn giá</label>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" name="" id="inp-price-modal" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-4">
+                      <label for="price">Giảm giá</label>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" name="" id="inp-discount-modal" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-sm-4">
+                      <label for="price">Thành tiền</label>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" name="" id="inp-payment-modal" class="form-control">
+                    </div>
+                  </div>                                             
+                </div>
+                <div class="modal-footer">
+                  <button id="btn-create-data" class="btn btn-info">Xác nhận</button>
+                    <button class="btn btn-danger" data-dismiss="modal">Huỷ bỏ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--      MODAL CLOSE FORM     -->
+        <div>
+          <div id="modal-success" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-xl p-3">
+              <div class="modal-content">
+                <div class="modal-header bg-warning">
+                  <h3 class="text-white">Đơn hàng được tạo thành công</h3>
+                </div>
+                <div class="modal-body">
+                  <p class="font-weight-bold">Đơn hàng của bạn đã được tạo thành công</p>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <label for="mã đơn hàng">Mã đơn hàng: </label>
+                    </div>
+                    <div class="col-sm-8">
+                      <input type="text" name="" id="inp-orderID" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="btn-confirm" class="btn btn-info">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--      MODAL DETAIL    -->
+         <div>
+          <div id="modal-form-detail" class="fade modal" tabindex="-1">
+              <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                      <div class="modal-header bg-success">
+                          <h3 class="text-white font-weight-bold">CHI TIẾT ĐƠN HÀNG</h3>
+                      </div>
+                      <div class="modal-body">
+                          <h5 class="text-secondary font-italic mb-3">Thông tin khách hàng:</h5>
+                          <div class="row">
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="hoTen">Họ và tên</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="" id="inp-fullname-detail" class="form-control" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="email">Email</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="email" id="inp-email-detail" class="form-control" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="phone">Phone</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="phone" id="inp-phone-detail" class="form-control" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row mt-3">
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="hoTen">Địa chỉ</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="" id="inp-address-detail" class="form-control" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="email">Lời nhắn</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="email" id="inp-message-detail" class="form-control" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                          <h5 class="text-secondary font-italic my-3">Thông tin đơn hàng:</h5>
+                          <div class="row mt-2">
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="hoTen">Kích cỡ</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <select name="pizza size" id="select-size-detail" class="form-control" disabled="disabale">
+                                              <option value="0">--Chọn kích cỡ--</option>
+                                              <option value="S">Size S</option>
+                                              <option value="M">Size M</option>
+                                              <option value="L">Size L</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="email">Đường kính</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="" name="email" id="inp-duongkinh-detail" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">   
+                                      <div class="col-sm-4">
+                                          <label for="phone">Sườn</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="phone" id="inp-suonNuong-detail" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row mt-2">
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="hoTen">Salad(Gram)</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="" id="inp-salad-detail" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="email">Số lượng nước</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="email" id="inp-count-drink-detail" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="phone">Đơn giá</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="phone" id="inp-price-detail" class="form-control" value="chọn kích cỡ pizza" disabled>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row mt-2">
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="hoTen">Loại pizza</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <select name="pizzaType" id="selece-pizza-type-detail" class="form-control" disabled>
+                                            <option value="0">--Chọn loại pizza--</option>
+                                              <option value="Seafood">Pizza hải sản</option>
+                                              <option value="Hawaii">Pizza Hawaii</option>
+                                              <option value="Bacon">Pizza thịt hun khói</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="email">Loại nước uống</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <select name="" id="select-drink-detail" class="form-control" disabled>
+
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="status">Trạng thái</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <select name="pizzaType" id="inp-status-detail" class="form-control">
+                                              <option value="open">Open</option>
+                                              <option value="cancel">Cancel</option>
+                                              <option value="confirmed">Confirmed</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="row mt-2">
+                              <div class="col-sm-4">
+                                  <div class="row">
+                                      <div class="col-sm-4">
+                                          <label for="voucher">Mã Voucher</label>
+                                      </div>
+                                      <div class="col-sm-8">
+                                          <input type="text" name="pizzaType" id="inp-voucher-detail" class="form-control">
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                          </div>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button id="btn-edit-data" class="btn btn-success toastrDefaultSuccess">Update</button>
+                          <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div>
+        <div id="modal-delete-data" class="fade modal" tabindex="-1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header bg-danger">
+                <h3 class="text-white">XOÁ DỮ LIỆU ĐƠN HÀNG</h3>
+              </div>
+              <div class="modal-body">
+                <div>Bạn có chắc là muốn xoá đơn hàng có mã đơn là <p id="text-orderId" class="font-weight-bold d-inline"></p> này ??</div>
+                <div>Việc xoá đơn hàng này sẽ không thể khôi phục lại.</div>
+              </div>
+              <div class="modal-footer">
+                <button id="btn-confirm-delete" class="btn btn-danger toastrDefaultInfo">Xác nhận</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Không</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; Q1-2022 <a href="https://adminlte.io">Pizza365.com</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 49.2.3
+    </div>
+  </footer>
+
+  <script>
+      //REGION 1:
+      var gOrderDB = { //KHAI BÁO DỮ LIỆU CHƯA BIẾN DATA BASR
+          orders:[],
+          filterData: function(paramDataFilter){  //PHUONG THUC LOC DỮ LIỆU THÔNG QUA FILTER ĐẦU VÀO LÀ LOẠI PIZZA VÀ TRANG THAI
+            var vFilterObject = [];
+            vFilterObject = this.orders.filter(function(paramOrder) {
+          return (
+            (paramOrder.loaiPizza.toLowerCase().includes(paramDataFilter.loaiPizza.toLowerCase()) || paramDataFilter.loaiPizza === "0") &&
+            (paramOrder.trangThai.toLowerCase().includes(paramDataFilter.trangThai.toLowerCase()) || paramDataFilter.trangThai === "0")
+          );
+        });
+        return vFilterObject;
+          }
+      }
+
+      //KHAI BÁO BIEN VI TRI CÁC CỘT
+      const gSTT = 0;
+      const gORDER_ID = 1;
+      const gSIZE = 2;
+      const gDUONG_KINH = 3;
+      const gPIZZA_TYPE = 4;
+      const gDRINK_TYPE = 5;
+      const gVOUCHER = 6;
+      const gDISCOUNT = 7;
+      const gPRICE = 8;
+      const gPAYMENT = 9;
+      const gSTATUS = 10;
+      const gACTION = 11;
+
+      var gSo_Thu_Tu = 0; //STT
+
+      var gId = -1;     //BIẾN DÙNG ĐỂ CHỨA GIÁ TRỊ ID, DÙNG CHO UPDATE TRẠNG THÁI
+
+      var gIndex = -1;    //BIẾN DÙNG ĐỂ CHỨA CHỈ SỐ CỦA PHẦN TỬ TRONG ARRAY DATABASE
+
+      //BIẾN CHỨA PROPERTISES LIEN QUAN ĐẾN DATA
+      var gCOL_NAME =   ["stt", "orderId", "kichCo", "duongKinh", "loaiPizza", "idLoaiNuocUong", "idVourcher", "giamGia", "thanhTien", "thanhTien", "trangThai", "action"];
+
+      //TAO DATA TABLE, ĐỔ DỮ LIỆU VÀO VÀ ĐỊNH NGHĨA CÁC CỘT CHO PHÙ HỢP
+      var gTableOrder = $("#table-order").DataTable({
+        //   data: gOrderDB.orders,
+          columns: [
+              {data: gCOL_NAME[gSTT]},
+              {data: gCOL_NAME[gORDER_ID]},
+              {data: gCOL_NAME[gSIZE]},
+              {data: gCOL_NAME[gDUONG_KINH]},
+              {data: gCOL_NAME[gPIZZA_TYPE]},
+              {data: gCOL_NAME[gDRINK_TYPE]},
+              {data: gCOL_NAME[gVOUCHER]},
+              {data: gCOL_NAME[gDISCOUNT]},
+              {data: gCOL_NAME[gPRICE]},
+              {data: gCOL_NAME[gPAYMENT]},
+              {data: gCOL_NAME[gSTATUS]},
+              {data: gCOL_NAME[gACTION]}
+          ],
+          columnDefs: [
+              {targets: gSTT, //ĐỊNH NGHĨA STT CỦA CỘT
+              render:function(){
+                    gSo_Thu_Tu++;
+                    return gSo_Thu_Tu;
+                }
+              },
+              {targets: gACTION, //ĐỊNH NGHĨA ACTION : CHỨA 2 NÚT EDIT-DETAIL VÀ DELETE DỮ LIỆU
+                addClass: "text-center",
+                defaultContent: 
+                `
+                <i class="fas fa-info-circle text-success font-weight-bold    btn-detail  " style="font-size: 25px; cursor: pointer;" title="Detail"></i>
+                <i class="fas fa-trash-alt text-danger font-weight-bold    btn-delete  " style="font-size: 25px; cursor: pointer;" title="Delete"></i>
+                `
+              },
+              {targets: gPAYMENT, //RENDER GIÁ TRỊ PHẢI THANH TOÁN, DỰA VÀO GIẢM GIÁ VÀ ĐƠN GIÁ SẴN CÓ
+                render: getPayment               
+            }
+          ]
+      });
+
+     var  gObjectRequest = {
+        kichCo: "",
+        duongKinh: "",
+        suon: "",
+        salad: "",
+        loaiPizza: "",
+        idVourcher: "",
+        idLoaiNuocUong: "",
+        soLuongNuoc: "",
+        hoTen: "",
+        thanhTien: "",
+        email: "",
+        soDienThoai: "",
+        diaChi: "",
+        loiNhan: "",
+        trangThai: ""
+    }    
+
+
+
+      //REGION 2:
+      $(document).ready(function(){
+        "use strict";
+          onPageLoading();
+        //KHAI BÁO HÀM SỰ KIÊN ẤN VÀO NÚT LỌC FILTER (LOẠI PIZZA VÀ TRANG THÁI)
+          $("#btn-filter").on("click", onBtnFilterData); 
+
+        //KHAI BÁO HÀM SỰ KIỆN ẤN NÚT THÊM MỚI SẼ HIỆN RA MODAL THÊM MỚI DỮ LIỆU
+          $("#btn-create").on("click", onBtnCreateForm);  
+
+        //KHAI BÁO HÀM SỰ KIỆN ẤN NÚT XÁC NHẬN ĐƠN HÀNG TRÊN FORM MODAL THÊM MỚI DỮ LIỆU  ĐỂ CHUYỂN QUA MODAL XÁC NHẬN LẠI THÔNG TIN ĐƠN
+          $("#btn-confirm-create").on("click", onBtnConfirmCreate); 
+
+        //KHAI BÁO HÀM SỰ KIỆN ẤN NÚT SẼ CALL AJAX ĐỂ LOAD DỮ LIỆU NÀY LÊN SERVER SAU KHI VALIDATE THÀNH CÔNG
+          $("#btn-create-data").on("click" , onBtnCreateData);
+
+        //KHAI BÁO HÀM SỰ KIỆN ẤN NÚT OK SAU KHI MODAL THÔNG BÁO TẠO ĐƠN HÀNG THÀNH CÔNG HIỆN RA
+          $("#btn-confirm").on("click", onBtnCloseForm);
+
+        //KHAI BÁO HÀM SỰ KIỆN ẤN NÚT VÀO NÚT CHI TIẾT SẼ HIỆN RA MODAL THÔNG TIN CHI TIẾT VÀ LOAD CÁC THÔNG TIN ĐÃ NHẬP LÊN
+        //, TUY NHIÊN KHÔNG CHO CHỈNH SỬA(CHỈ SỬA TRẠNG THÁI)
+          $("#table-order").on("click", ".btn-detail", onBtnDetailForm);
+
+        //KHAI BÁO HÀM SỰ KIỆN ẤN NÚT UPDATE TRÊN FORM MODAL DETAIL ĐỂ TIẾN HÀNH CALL AJAX UPDATE LAI DATA  VÀ TOAST RA THÔNG BÁO
+          $("#btn-edit-data").on("click", onBtnEditData);
+
+        //KHAI BÁO HÀM SỰ KIỆN ẤN NÚT XOÁ DỮ LIỆU TRÊN TABLE SẼ HIỆN RA MODAL XÁC NHẬN XOÁ.
+          $("#table-order").on("click", ".btn-delete", onBtnDeleteData);
+
+        // KHAI BÁO HÀM SỰ KIỆN ẤN NÚT XÁC NHẬN XOÁ DỮ LIỆU SẼ TOAST RA THÔNG BÁO ĐÃ XOÁ DỮ LIỆU VÀ CALL AJAX
+          $("#btn-confirm-delete").on("click", onBtnConfirmDelete)
+      })
+
+
+
+
+
+
+      //REGION 3:
+      function onPageLoading(){
+        "use strict";
+          $.ajax({ //GỌI AJAX ĐỂ NẠP DỮ LIỆU TỪ SERVER VÀO DATA BASE + LOAD TABLE
+              url: "http://42.115.221.44:8080/devcamp-pizza365/orders",
+              type: "GET",
+              dataType: "json",
+              async: false,
+              success: loadDataToOrderDB,
+              error: function(ajaxContext){
+                  console.log(ajaxContext.responseText);
+              }
+          })
+      }
+      //HÀM XỬ LÝ SỰ KIỆN KHI ẤN NÚT LỌC DỮ LIỆU (LOẠI PIZZA, TRẠNG THÁI)
+      function onBtnFilterData(){
+        "use strict";
+        //KHAI BÁO BIẾN CHỨA DỮ LIỆU LỌC FILTER
+          var vDataFilter = {
+              loaiPizza: "",
+              trangThai: ""
+          }
+          //HÀM LẤY GIÁ TRỊ LỌC THÔNG QUA SELECT
+          getDataFilter(vDataFilter);
+
+          //TIẾN HÀNH LỌC DỮ LIỆU THÔNG QUA METHOD FILTERDATA
+          var vFilterDataObject = gOrderDB.filterData(vDataFilter);
+          console.log(vFilterDataObject);
+          //TẢI LẠI TABLE
+          loadDataToTable(vFilterDataObject)
+      }
+
+      //HÀM XỬ LÝ SỰ KIỆN KHI ẤN VÀO NỨT THÊM MỚI ĐỂ HIỆN THỊ RA MODAL FORM CREATE
+      function onBtnCreateForm(){
+        "use strict";
+          //HIỂN THỊ MODAL FORM
+          $("#modal-form-create").modal("show");
+
+          $("#select-size").on("click", loadDataOnPizzaSize); //HAM XỬ LÝ KHI ẤN VÀO LOẠI PIZZA SẼ LOAD THÊM CÁC DỮ LIỆU LIÊN QUAN ĐÉN BÁNH
+
+          loadDataDrinkToSelect();  //HÀM CALL AJAX  ĐỂ LẤY DANH SÁCH THỨC UỐNG
+          
+          
+      }
+
+      //HÀM XỬ LÝ SỰ KIỆN KHI ẤN NÚT TẠO ĐƠN 
+      function onBtnConfirmCreate(){
+        "use strict";
+        //BIẾN CỤC BỐ ĐÃ ĐƯỢC KHAI BÁO DÙNG ĐỂ CHỨA DỮ LIỆU ĐỂ CALL AJAX TẠO FORM
+          gObjectRequest = {
+        kichCo: "",
+        duongKinh: "",
+        suon: "",
+        salad: "",
+        loaiPizza: "",
+        idVourcher: "",
+        idLoaiNuocUong: "",
+        soLuongNuoc: "",
+        hoTen: "",
+        thanhTien: "",
+        email: "",
+        soDienThoai: "",
+        diaChi: "",
+        loiNhan: "",
+        trangThai:""
+    }    
+
+        getDataObjectRequest(gObjectRequest);   //HAM LẤY GIÁ TRỊ OBJECT REQUEST
+
+        console.log(gObjectRequest);
+
+        //B2: KIEM TRA DỮ LIỆU NHẬP VÀO
+        var vIsValidateData = isValidateData(gObjectRequest);
+        if(vIsValidateData){
+          var vDiscount = 0;
+          $.ajax({  //CALL AJAX ĐẺ LẤY DISCOUNT DỰA THEO VOUCHER ID NHẬP VÀO
+            url: "http://42.115.221.44:8080/devcamp-voucher-api/voucher_detail/" + gObjectRequest.idVourcher,
+            data: "GET",
+            dataType: "json",
+            async: false,
+            success: function(res){
+              return vDiscount = res.phanTramGiamGia;
+            },
+            error: function(ajaxContext){
+              return vDiscount = 0;
+            }
+          })
+          console.log(vDiscount);
+          //ẨN MODAL NÀY ĐI
+          $("#modal-form-create").modal("hide");
+
+          //LOAD MODAL MỚI (MODAL XÁC NHẬN LẠI ĐƠN HÀNG)
+          loadModalConfirm(gObjectRequest, vDiscount)
+        }
+      }
+
+      //HÀM XỬ LÝ SỰ KIÊN KHI ẤN NÚT XÁC NHẬN TRÊN FORM MODAL XÁC NHẬN LẠI ĐƠN HÀNG( SẼ CALL AJAX LOAD DỮ LIỆU LÊN SERVER NẾU XÁC NHẬN LÂN NÀY)
+      function onBtnCreateData(){
+        "use strict";
+        $.ajax({
+          url: "http://42.115.221.44:8080/devcamp-pizza365/orders",
+          data: JSON.stringify(gObjectRequest),
+          type: "POST",
+          dataType: "json",
+          contentType: "application/json;charset=UTF-8",
+          success: loadFormSuccess,
+          error: function(ajaxContext){
+            console.log(ajaxContext.responseText);
+          }
+        })
+      }
+
+
+      //HÀM XỬ LÝ SỰ KIÊN KHI ẤN NÚT OK SAU KHI MODAL THÔNG TIN MÃ ĐƠN HÀNG ĐƯỢC TẠO HIỆN RA
+      function onBtnCloseForm(){
+        "use strict";
+        $("#modal-success").modal("hide");//ẨN MODAL THÔNG BÁO NÀY ĐI
+        loadDataToTable(gOrderDB.orders);//LOAD LẠI DỮ LIỆU
+      }
+
+      //HÀM XỬ LÝ SỰ KIỆN KHI ẤN NÚT CHI TIẾT ĐƠN HÀNG (BIỂU TƯỢNG I)
+      function onBtnDetailForm(){
+        "use strict";
+        var vRowClick = $(this).closest('tr');  //LẤY DỮ LIỆU CỦA HÀNG ĐƯỢC ẤN
+        gIndex = gTableOrder.row(vRowClick).index();  //LẤY CHỈ SỐ PHẦN TỬ CỦA HÀNG ĐÓ
+        var vRowData = gTableOrder.row(vRowClick).data(); //LẤY DATA CỦA HÀNG ĐÓ
+        console.log(vRowData);
+        gId = vRowData.id //LẤY GIÁ TRỊ ID CẢU HÀNG ĐÓ
+        console.log(gId);
+        loadDataDrinkToSelectDetail();  //ĐỔ DỮ LIỆU DRINK VÀO SELECT
+
+        $("#select-size-detail").on("click", loadDataOnPizzaSizeDetail);  //LOAD DỮ LIỆU KHI CHỌN SIZE PIZZA
+
+        loadDataToModal(gOrderDB.orders[gIndex]); //ĐỔ DỮ LIỆU CỦA DÒNG ĐÓ VÀO MODAL DETAIL
+
+        $("#modal-form-detail").modal("show");    //HIỂN THI MODAL
+      }
+      //HÀM KHI ẤN NÚT TIỀN HÀNH LẤY DỮ LIỆU INPUT VÀ KIỂM TRA DỮ LIỆU SAU ĐÓ UPDATE LẠI DATA
+      function onBtnEditData(){
+        "use strict";
+              var vUpdateRequest = { //BIẾN CHỨA DỮ LIỆU DÙNG ĐỂ UPDATE 
+              trangThai:""
+          }    
+          getDataObjectRequestEdit(vUpdateRequest);
+          console.log(vUpdateRequest);
+
+          $.ajax({    //HÀM GỌI UPDATE TRẠNG THÁI CỦA ORDER
+            url: "http://42.115.221.44:8080/devcamp-pizza365/orders/" + gId,
+            data: JSON.stringify(vUpdateRequest),
+            type: "PUT",
+            dataType: "json",
+            contentType: "application/json;charset=UTF-8",
+            async: false, //CẦN DÙNG BẤT ĐỒNG BỘ TRONG TRƯỜNG HỢP NÀY
+            success: function(res){
+              console.log(res)
+              $("#modal-form-detail").modal("hide");    //ẨN MODAL DETAIL ĐI
+              toastr.success('Mã đơn hàng ' + res.orderId + ' đã được cập nhật' );  //TOAST SUCCESS THÔNG BÁO DỮ LIỆU ĐÃ ĐƯỢC CẬP NHẬT
+              gOrderDB.orders.splice(gIndex, 1, res);   //CẬP NHẬT DỮ LIỆU TRÊN DB
+              loadDataToTable(gOrderDB.orders);   //RE-LOAD LẠI DỮ LIỆU TRÊN BẢNG
+            },
+            error: function(ajaxContext){
+              console.log(ajaxContext.responseText);
+            }
+          })
+        
+      }
+
+      function onBtnDeleteData(){
+        "use strict";
+        //LẤY GIÁ TRỊ ID VÀ CHỈ SỐ PHẦN TỬ CỦA HÀNG ĐÓ
+        var vRowClick = $(this).closest('tr'); //LẤY CLICK
+        gIndex = gTableOrder.row(vRowClick).index(); //LẤY CHỈ SÔS
+        var vRowData = gTableOrder.row(vRowClick).data(); //LẤY GIÁ TRỊ CỦA DÒNG
+        console.log(vRowData);
+        gId = vRowData.id; //LẤY ID CỦA DỮ LIỆU ĐÃ CHỌN
+
+        $("#modal-delete-data").modal("show");  //HIỂN THỊ MODAL CONFIRM DELETE
+
+        $("#text-orderId").html(vRowData.orderId);  //BIẾN CHỨA DỮ LIỆU ORDER ID DÙNG ĐỂ GÁN VÀO MODAL CONFIRM DELETE
+        
+      }
+
+      function onBtnConfirmDelete(){
+        "use strict";
+        $.ajax({
+          url: "http://42.115.221.44:8080/devcamp-pizza365/orders/" + gId,
+          type: "DELETE",
+          dataType: "json",
+          async: false,
+          success: function(res){
+            $("#modal-delete-data").modal("hide");
+            gOrderDB.orders.splice(gIndex,1);
+            loadDataToTable(gOrderDB.orders);
+            toastr.info('Đơn hàng này đã được xoá. Vui lòng kiểm tra')
+          }
+        })
+      }
+
+      //REGION 4:
+    //LOAD DỮ LIỆU TỪ SEVER VÀO ORDER DB
+    function loadDataToOrderDB(paramOrderData){
+      "use strict";
+        gOrderDB.orders = paramOrderData;
+        console.log(gOrderDB.orders);
+        
+        loadDataToTable(paramOrderData);
+        
+}   
+    function getPayment(paramData, paramType, paramRow){ //LẤY GIÁ TRỊ SAU KHI ĐÃ TRừ ĐI GIẢM GIÁ
+      "use strict";
+        // console.log(paramData);
+        // console.log(paramRow);
+        return paramData - paramRow.giamGia;
+    }
+
+
+    function loadDataToTable(paramDataTable){ //LOAD DATA VÀO TABLE
+      "use strict";
+        gSo_Thu_Tu = 0;
+        gTableOrder.clear();
+        gTableOrder.rows.add(paramDataTable);
+        gTableOrder.draw();
+}
+
+    function getDataFilter(paramDataFilter){  //HÀM LẤY GIÁ TRỊ CẦN FILTER TRƯỚC KHI LỌC
+      "use strict";
+        paramDataFilter.loaiPizza = $("#select-pizza").val();
+        paramDataFilter.trangThai = $("#select-status").val();
+    }
+
+    function loadDataOnPizzaSize(){
+      "use strict";
+        var vSelectPizzaSize = $("#select-size").val(); //KHAI BÁO HÀM KHI CHỌN VALUE CỦA SELECT ĐỂ LẤY DỮ LIỆU TƯƠNG ỨNG
+        if(vSelectPizzaSize == "S"){  //GẮN CÁC GIÁ TRỊ TƯƠNG ỨNG VÀO INPUT KHI CHỌN KICH CO PIZZA s
+            $("#inp-duongkinh").val("20");
+            $("#inp-suonNuong").val("2");
+            $("#inp-salad").val("200");
+            $("#inp-count-drink").val("2");
+            $("#inp-price").val("150000");
+        }
+        if(vSelectPizzaSize == "M"){  //GẮN CÁC GIÁ TRỊ TƯƠNG ỨNG VÀO INPUT KHI CHỌN KICH CO PIZZA M
+            $("#inp-duongkinh").val("25");
+            $("#inp-suonNuong").val("4");
+            $("#inp-salad").val("300");
+            $("#inp-count-drink").val("3");
+            $("#inp-price").val("200000");
+        }
+        if(vSelectPizzaSize == "L"){ //GẮN CÁC GIÁ TRỊ TƯƠNG ỨNG VÀO INPUT KHI CHỌN KICH CO PIZZA L
+            $("#inp-duongkinh").val("30");
+            $("#inp-suonNuong").val("8");
+            $("#inp-salad").val("500");
+            $("#inp-count-drink").val("4");
+            $("#inp-price").val("250000");
+        }
+        if(vSelectPizzaSize == "0"){ //THÔNG BÁO CHỌN KICH CO PIZA
+            $("#inp-duongkinh").val("chọn kích cỡ pizza");
+            $("#inp-suonNuong").val("chọn kích cỡ pizza");
+            $("#inp-salad").val("chọn kích cỡ pizza");
+            $("#inp-count-drink").val("chọn kích cỡ pizza");
+            $("#inp-price").val("chọn kích cỡ pizza");
+        }
+    }
+    //GỌI AJAX LẤY DRINK VÀ ĐỔ DỮ LIỆU VÀO SELECT NÀY
+    function loadDataDrinkToSelect(){
+      "use strict";
+        $.ajax({
+            url: "http://42.115.221.44:8080/devcamp-pizza365/drinks",
+            type: "GET",
+            dataType: "json",
+            success: function(res){
+                var vSelectDrink = $("#select-drink");
+                vSelectDrink.html("");
+                $("<option>", {
+                    text: "--Chọn nước uống---",
+                    value: 0
+                }).appendTo(vSelectDrink);
+                for( var bI = 0; bI < res.length; bI++){
+                    $("<option>",{
+                        text: res[bI].tenNuocUong,
+                        value: res[bI].maNuocUong
+                    }).appendTo(vSelectDrink);
+                }
+            },
+            error: function(ajaxContext){
+                console.log(ajaxContext.responseText);
+            }
+        })
+    }
+    //HÀM LẤY GIÁ TRỊ CỦA OBJ
+    function getDataObjectRequest(paramDataObjectRequest){
+      "use strict";
+        paramDataObjectRequest.kichCo = $("#select-size").val();
+        paramDataObjectRequest.duongKinh = $("#inp-duongkinh").val();
+        paramDataObjectRequest.suon = $("#inp-suonNuong").val();
+        paramDataObjectRequest.salad = $("#inp-salad").val();
+        paramDataObjectRequest.loaiPizza = $("#selece-pizza-type").val();
+        paramDataObjectRequest.idVourcher = $("#inp-voucher").val();
+        paramDataObjectRequest.idLoaiNuocUong = $("#select-drink").val();
+        paramDataObjectRequest.soLuongNuoc = $("#inp-count-drink").val();
+        paramDataObjectRequest.hoTen = $("#inp-fullname").val().trim();
+        paramDataObjectRequest.thanhTien = $("#inp-price").val().trim();
+        paramDataObjectRequest.email = $("#inp-email").val().trim();
+        paramDataObjectRequest.soDienThoai = $("#inp-phone").val().trim();
+        paramDataObjectRequest.diaChi = $("#inp-address").val().trim();
+        paramDataObjectRequest.loiNhan = $("#inp-message").val().trim();
+        paramDataObjectRequest.trangThai = $("#inp-status").val();
+
+
+    }
+    //HÀM KIỂM TRA DỮ LIỆU NHẬP VÀO
+    function isValidateData(paramDataObjectRequest){
+      "use strict";
+      if(paramDataObjectRequest.hoTen == ""){ //KIEM TRA HỌ TÊN
+      toastr.error('Vui lòng nhập họ tên');
+      return false
+      }
+      //KIỂM TRA ĐỊNH DẠNG SỐ PHONE
+      if(paramDataObjectRequest.soDienThoai == ""){
+      toastr.error('Vui lòng nhập số điện thoại');
+      return false
+      }
+
+      //KIỂM TRA SỐ PHONE 
+      if(isNaN(paramDataObjectRequest.soDienThoai)){
+      toastr.error('Số điện thoại nhập vào không hợp lệ');
+      return false
+      }
+
+      //KIỂM TRA ĐỊA CHỈ
+      if(paramDataObjectRequest.diaChi == ""){
+      toastr.error('Vui lòng nhập địa chỉ');
+      return false
+      }
+
+      //KIỂM TRA CHỌN KÍCH CỠ BÁNH
+      if(paramDataObjectRequest.kichCo == "0"){
+      toastr.error('Vui lòng chọn kích cỡ bánh');
+      return false
+      }
+
+      //KIEEMT TRA CHỌN LOẠI PIZZA
+      if(paramDataObjectRequest.loaiPizza == "0"){
+      toastr.error('Vui lòng chọn loại pizza');
+      return false
+      }
+
+      //KIỂM TRA CHỌN LOẠI NƯỚC UỐNG
+      if(paramDataObjectRequest.idLoaiNuocUong == "0"){
+      toastr.error('Vui lòng chọn loại nước uống');
+      return false;
+      }
+      //KIỂM TRA EMAIL NHẬP VÀO
+      if(paramDataObjectRequest.email == ""){
+        return true;
+      }else{
+      var vMailFormat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      if(!paramDataObjectRequest.email.match(vMailFormat)){
+      toastr.error('Email nhập vào không hợp lệ, vui lòng thử lại');
+      return false
+        }
+      }
+      return true;
+    }
+
+    //HÀM LOAD DỮ LIỆU XÁC NHẬN THÔNG TIN ĐƠN HÀNG TỪ FORM TẠO MỚI ĐƠN BAN ĐÀU
+    function loadModalConfirm(paramObjectRequest , paramDiscount){
+      "use strict";
+      $("#modal-confirm-success").modal("show");
+      $("#inp-info-order").val(
+        "Họ và tên:  " +  paramObjectRequest.hoTen + "\n" +
+        "Email:  " + paramObjectRequest.email + "\n" +
+        "Phone:  " + paramObjectRequest.soDienThoai + "\n" +
+        "Địa chỉ:  " + paramObjectRequest.diaChi + "\n" +
+        "Lời nhắn:  " + paramObjectRequest.loiNhan + "\n" +
+        "Kích cỡ bánh:  " + paramObjectRequest.kichCo + "\n" +
+        "Đường kính bánh:  " + paramObjectRequest.duongKinh + "\n" +
+        "Sườn nướng:  " + paramObjectRequest.suon + "\n" +
+        "Salad:  " + paramObjectRequest.salad + "\n" +
+        "Số lượng nước uống:  " + paramObjectRequest.soLuongNuoc + "\n" +
+        "Loại Pizza:  " + paramObjectRequest.loaiPizza + "\n" +
+        "Loại Nước uống:  " + paramObjectRequest.idLoaiNuocUong 
+      );
+
+      var vDiscountNumber = parseInt(paramDiscount, 10);
+
+      $("#inp-voucher-modal").val(paramObjectRequest.idVourcher);
+      $("#inp-discount-modal").val(vDiscountNumber + " %");
+      $("#inp-price-modal").val(paramObjectRequest.thanhTien + " VND");
+      $("#inp-payment-modal").val(paramObjectRequest.thanhTien - (vDiscountNumber*paramObjectRequest.thanhTien)/100 + " VND");
+
+       
+    }
+    //HIỂN THỊ MODAL TẠO ĐƠN THÀNH CÔNG
+    function loadFormSuccess(paramResult){
+      "use strict";
+      $("#modal-confirm-success").modal("hide");
+      $("#modal-success").modal("show");
+
+      $("#inp-orderID").val(paramResult.orderId);
+      gOrderDB.orders.push(paramResult);
+      console.log(gOrderDB.orders);
+    }
+
+    //ĐỔ DỮ LIỀU VÀO FORM MODAL KHI ẤN VÀO NÚT CHI TIẾT
+    function loadDataToModal(paramDataObjectIndex){
+      "use strict";
+      console.log(paramDataObjectIndex)
+      $("#select-size-detail").val(paramDataObjectIndex.kichCo);
+      $("#inp-duongkinh-detail").val(paramDataObjectIndex.duongKinh);
+      $("#inp-suonNuong-detail").val(paramDataObjectIndex.suon);
+      $("#inp-salad-detail").val(paramDataObjectIndex.salad);
+      $("#selece-pizza-type-detail").val(paramDataObjectIndex.loaiPizza);
+      $("#inp-voucher-detail").val(paramDataObjectIndex.idVourcher);
+      $("#select-drink-detail").val(paramDataObjectIndex.idLoaiNuocUong);
+      $("#inp-count-drink-detail").val(paramDataObjectIndex.soLuongNuoc);
+      $("#inp-fullname-detail").val(paramDataObjectIndex.hoTen);
+      $("#inp-price-detail").val(paramDataObjectIndex.thanhTien);
+      $("#inp-email-detail").val(paramDataObjectIndex.email);
+      $("#inp-phone-detail").val(paramDataObjectIndex.soDienThoai);
+      $("#inp-address-detail").val(paramDataObjectIndex.diaChi);
+      $("#inp-message-detail").val(paramDataObjectIndex.loiNhan);
+      $("#inp-status-detail").val(paramDataObjectIndex.trangThai);
+
+    }
+    function loadDataOnPizzaSizeDetail(){ //LOAD DỮ LIỆU TƯƠNG ỨNG KHI CHỌN KÍCH CỠ PIZZA TRONG MODAL CHI TIẾT
+      "use strict";
+      var vSelectPizzaSize = $("#select-size-detail").val();
+        if(vSelectPizzaSize == "S"){
+            $("#inp-duongkinh-detail").val("20");
+            $("#inp-suonNuong-detail").val("2");
+            $("#inp-salad-detail").val("200");
+            $("#inp-count-drink-detail").val("2");
+            $("#inp-price-detail").val("150000");
+        }
+        if(vSelectPizzaSize == "M"){
+            $("#inp-duongkinh-detail").val("25");
+            $("#inp-suonNuong-detail").val("4");
+            $("#inp-salad-detail").val("300");
+            $("#inp-count-drink-detail").val("3");
+            $("#inp-price-detail").val("200000");
+        }
+        if(vSelectPizzaSize == "L"){
+            $("#inp-duongkinh-detail").val("30");
+            $("#inp-suonNuong-detail").val("8");
+            $("#inp-salad-detail").val("500");
+            $("#inp-count-drink-detail").val("4");
+            $("#inp-price-detail").val("250000");
+        }
+        if(vSelectPizzaSize == "0"){
+            $("#inp-duongkinh-detail").val("chọn kích cỡ pizza");
+            $("#inp-suonNuong-detail").val("chọn kích cỡ pizza");
+            $("#inp-salad-detail").val("chọn kích cỡ pizza");
+            $("#inp-count-drink-detail").val("chọn kích cỡ pizza");
+            $("#inp-price-detail").val("chọn kích cỡ pizza");
+        }
+    }
+
+
+    //LOAD DỮ LIỆU DRINK VÀO MODAL CHITIET ĐƠN
+    function loadDataDrinkToSelectDetail(){
+      "use strict";
+      $.ajax({
+            url: "http://42.115.221.44:8080/devcamp-pizza365/drinks",
+            type: "GET",
+            dataType: "json",
+            async: false,
+            success: function(res){
+              debugger;
+                var vSelectDrinkDetail = $("#select-drink-detail");
+                vSelectDrinkDetail.html("");
+                $("<option>", {
+                    text: "--Chọn nước uống---",
+                    value: 0
+                }).appendTo(vSelectDrinkDetail);
+                for( var bI = 0; bI < res.length; bI++){
+                    $("<option>",{
+                        text: res[bI].tenNuocUong,
+                        value: res[bI].maNuocUong
+                    }).appendTo(vSelectDrinkDetail);
+                }
+            },
+            error: function(ajaxContext){
+                console.log(ajaxContext.responseText);
+            }
+        })
+    }
+    //LẤY GIÁ TRỊ TRẠNG THÁI
+    function getDataObjectRequestEdit(paramDataObjectRequest){
+      "use strict";
+        paramDataObjectRequest.trangThai = $("#inp-status-detail").val();
+    }
+
+  </script>
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Toastr -->
+<script src="plugins/toastr/toastr.min.js"></script>
+<!-- Select2 -->
+<script src="plugins/select2/js/select2.full.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+
+<script>
+  //Initialize Select2 Elements
+  $('.select2').select2({
+      theme: 'bootstrap4'
+    })
+</script>
+</body>
+</html>
