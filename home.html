@@ -864,10 +864,11 @@
           orders:[],
           filterData: function(paramDataFilter){  //PHUONG THUC LOC DỮ LIỆU THÔNG QUA FILTER ĐẦU VÀO LÀ LOẠI PIZZA VÀ TRANG THAI
             var vFilterObject = [];
-            vFilterObject = this.orders.filter(function(paramOrder) {
+            
+            vFilterObject = this.orders.filter(function(paramOrder){
           return (
-            (paramOrder.loaiPizza.toLowerCase().includes(paramDataFilter.loaiPizza.toLowerCase()) || paramDataFilter.loaiPizza === "0") &&
-            (paramOrder.trangThai.toLowerCase().includes(paramDataFilter.trangThai.toLowerCase()) || paramDataFilter.trangThai === "0")
+            ((paramOrder.loaiPizza||"").toLowerCase().includes((paramDataFilter.loaiPizza||"").toLowerCase()) || paramDataFilter.loaiPizza === "0") &&
+            ((paramOrder.trangThai||"").toLowerCase().includes((paramDataFilter.trangThai||"").toLowerCase()) || paramDataFilter.trangThai === "0")
           );
         });
         return vFilterObject;
